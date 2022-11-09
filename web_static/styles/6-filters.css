@@ -7,7 +7,7 @@
     display: flex;
     justify-content:flex-end;
     align-items: center;
-    border: 1px solid black;
+    border: 1px solid #DDDDDD;
     position: relative;
 }
 
@@ -38,10 +38,6 @@
     position: absolute;
     top: 0rem;
 }
-.location-four-sides {
-    text-align: center;
-    color: #695f60;
-}
 
 .top-title,
 .title {
@@ -49,30 +45,79 @@
     padding-right: 3rem;
 }
 
-.locations h4,
-.amenities h4 {
-    font-size: 14px;
-    margin-top: -25px;
-}
-
-
-.amenities h3 {
-    font-weight: 600;
-    margin-top: 0px;
-    padding-top: 1rem;
+.title {
+    margin-top: -20px;
 }
 
 .amenities {
     height: 100%;
     width: 25%;
     background-color: white;
-    position: absolute;
     left: 14em;
+    border-bottom: 1px solid #DDDDDD;
+    border-left: 1px solid #DDDDDD;
     text-align: center;
+    top: 0rem;
+    position: absolute;
+
+
+}
+
+.amenities-top {
+    display: flex;
+    flex-direction: column;
+    margin: -1em;
+}
+
+.second-dropdown {
+    background-color: rgb(227, 233, 233);
+    display: flex;
+    color: #695f60;
+    margin-left: -2.5rem;
+    margin-bottom: -1.5rem;
+    border-radius: 4px;
+    border-top: 1px solid #DDDDDD;
+    display: none;
+    margin-top: -1.3rem;
+    padding: 1rem;
+
+}
+
+.second-dropdown ul li p {
+    margin-top: .2rem;
+    text-align: start;
+
+}
+
+.second-dropdown ul li {
+    list-style: none;
+}
+
+.dropdown1-sub {
+    margin-top: -1em;
+}
+.dropdown1-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+.dropdown2-sub {
+    margin-top: -1em;
 }
 
 
-.dropdown {
+.dropdown1-wrapper2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+
+.first-dropdown {
     background-color: rgb(227, 233, 233);
     list-style: none;
     display: flex;
@@ -81,16 +126,20 @@
     margin-left: -2.5rem;
     margin-bottom: -1.5rem;
     border-radius: 4px;
-    border-top: 1px solid #695f60;
-    margin-top: .5rem;
+    border-top: 1px solid #DDDDDD;
+    margin-top: -1.3rem;
     display: none;
 }
 
-.dropdown li {
+.first-dropdown li {
     list-style: none;
 }
 
-ul li:hover .dropdown {
+
+ul li:hover .first-dropdown {
     display:block;
 }
 
+ul li:hover .second-dropdown {
+    display:block;
+}
