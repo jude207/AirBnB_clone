@@ -83,13 +83,13 @@
 
 }
 
-.second-dropdown ul li p {
+.second-dropdown > ul > li > p {
     margin-top: .2rem;
     text-align: start;
 
 }
 
-.second-dropdown ul li {
+.second-dropdown > ul > li {
     list-style: none;
 }
 
@@ -131,7 +131,7 @@
     display: none;
 }
 
-.first-dropdown li {
+.first-dropdown > ul > li {
     list-style: none;
 }
 
